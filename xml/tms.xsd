@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tms:schema xmlns:tms="http://www.w3.org/2001/XMLSchema">
+    <tms:element name="user" type="user"></tms:element>
+    <tms:complexType name="user">
+        <tms:sequence>
+            <tms:element name="Employee" type="Employee" minOccurs="1" maxOccurs="unbounded"></tms:element>
+            <tms:element name="Zonal" type="Zonal" minOccurs="1" maxOccurs="unbounded"></tms:element>
+            <tms:element name="Buyer" type="Buyer" minOccurs="1" maxOccurs="unbounded"></tms:element>
+        </tms:sequence>
+    </tms:complexType>
+    <tms:complexType name="Employee">
+        <tms:sequence>
+            <tms:element name="employee_id" type="eid"></tms:element>
+            <tms:element name="Name" type="tms:string"></tms:element>
+            <tms:element name="Age" type="tms:integer"></tms:element>
+            <tms:element name="Role" type="tms:string"></tms:element>
+            <tms:element name="Email" type="tms:string"></tms:element>
+            <tms:element name="Phone_No" type="phone"></tms:element>
+        </tms:sequence>
+    </tms:complexType>
+    <tms:complexType name="Zonal">
+        <tms:sequence>
+            <tms:element name="Zone_id" type="zid"></tms:element>
+            <tms:element name="Name" type="tms:string"></tms:element>
+            <tms:element name="Email" type="tms:string"></tms:element>
+            <tms:element name="Phone_No" type="phone"></tms:element>
+        </tms:sequence>
+    </tms:complexType>
+    <tms:complexType name="Buyer">
+        <tms:sequence>
+            <tms:element name="Buyer_id" type="bid"></tms:element>
+            <tms:element name="Name" type="tms:string"></tms:element>
+            <tms:element name="Email" type="tms:string"></tms:element>
+            <tms:element name="Phone_No" type="phone"></tms:element>
+        </tms:sequence>
+    </tms:complexType>
+    <tms:simpleType name="phone">
+        <tms:restriction base="tms:integer">
+            <tms:minInclusive value="10"></tms:minInclusive>
+            <tms:pattern value="[0-9]*"></tms:pattern>
+        </tms:restriction>
+    </tms:simpleType>
+    <tms:simpleType name="eid">
+        <tms:restriction base="tms:string">
+            <tms:maxLength value="5"></tms:maxLength>
+            <tms:pattern value="EMP[0-9]"></tms:pattern>
+        </tms:restriction>
+    </tms:simpleType>
+    <tms:simpleType name="zid">
+        <tms:restriction base="tms:string">
+            <tms:maxLength value="5"></tms:maxLength>
+            <tms:pattern value="ZON[0-9]"></tms:pattern>
+        </tms:restriction>
+    </tms:simpleType>
+    <tms:simpleType name="bid">
+        <tms:restriction base="tms:string">
+            <tms:maxLength value="5"></tms:maxLength>
+            <tms:pattern value="BUY[0-9]"></tms:pattern>
+        </tms:restriction>
+    </tms:simpleType>
+</tms:schema>

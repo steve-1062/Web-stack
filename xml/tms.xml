@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tms.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="tms.xsl" type="text/xsl"?>
+<user>
+    <Employee>
+        <employee_id>EMP1</employee_id>
+        <Name>Sidharth</Name>
+        <Age>24</Age>
+        <Role>Field Officer</Role>
+        <Email>sidh123@gmail.com</Email>
+        <Phone_No>9626766486</Phone_No>
+    </Employee>
+    <Employee>
+        <employee_id>EMP2</employee_id>
+        <Name>Teddy</Name>
+        <Age>27</Age>
+        <Role>Secretary</Role>
+        <Email>Teddy@gmail.com</Email>
+        <Phone_No>8472392839</Phone_No>
+    </Employee>
+    <Employee>
+        <employee_id>EMP3</employee_id>
+        <Name>Aaron</Name>
+        <Age>28</Age>
+         <Role>Circle Officer</Role>
+        <Email>aaron10@gmail.com</Email>
+        <Phone_No>7934492028</Phone_No>
+    </Employee>
+    <Zonal>
+        <Zone_id>ZON1</Zone_id>
+        <Name>Anisha</Name>
+        <Email>aneesabeaky@gmail.com</Email>
+        <Phone_No>8738416952</Phone_No>
+    </Zonal>
+    <Zonal>
+        <Zone_id>ZON2</Zone_id>
+        <Name>Rohan</Name>
+        <Email>rohankr@gmail.com</Email>
+        <Phone_No>8368389832</Phone_No>
+    </Zonal>
+    <Zonal>
+        <Zone_id>ZON3</Zone_id>
+        <Name>Jose</Name>
+        <Email>joseanthony@gmail.com</Email>
+        <Phone_No>8127389384</Phone_No>
+    </Zonal>
+    <Buyer>
+        <Buyer_id>BUY1</Buyer_id>
+        <Name>Ramesh</Name>
+        <Email>ramesh@gmail.com</Email>
+        <Phone_No>8738416942</Phone_No>
+    </Buyer>
+    <Buyer>
+        <Buyer_id>BUY2</Buyer_id>
+        <Name>Steve</Name>
+        <Email>steveie42@gmail.com</Email>
+        <Phone_No>8748932916</Phone_No>
+    </Buyer>
+    <Buyer>
+        <Buyer_id>BUY3</Buyer_id>
+        <Name>Sam</Name>
+        <Email>sammy123456@gmail.com</Email>
+        <Phone_No>9767645342</Phone_No>
+    </Buyer>
+</user>
